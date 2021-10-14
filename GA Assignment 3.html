@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+<style>
+
+body {
+  font-family: helvetica, sans-serif;
+  background: #efefef;
+  margin: 0;
+}
+
+header {
+  background-color: #ffefcf;
+  padding: 30px 0 20px 0;
+  border-bottom: 1px solid black;
+  text-align: center;
+  
+}
+
+header nav a{
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 2px solid #68B6D8;
+  padding: 5px 8px;
+  margin: 0 8px;
+  
+}
+
+header nav a:hover{
+  background-color: #68B6D8;
+  color: white;
+  border-color: black;
+}
+
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+h1 {
+  font-family: 'Ephesis', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #68B6D8;
+  margin: 10px 0 20px 0;
+  font-style: italic;
+  font-family: 'Explora';
+}
+
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  border-radius: 0 0 7px 7px;
+  font-family: 'Explora';
+  font-size: 30px;
+}
+
+
+small {
+  opacity: 0;
+  width: 600px;
+  text-align: justify;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #ffefcf;
+  padding: 30px 0 20px 0;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.show-description p {
+  height: 150px;
+  
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://i.imgur.com/lIkl0mH.jpg");
+  background-position: center;
+}
+.second{
+  background-image: url("https://i.imgur.com/LQAHlj2.jpg");
+  background-position: center;
+}
+.dessert{
+  background-image: url("https://i.imgur.com/aFPp1zK.jpg");
+  background-position: center;
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+  <h1>Tony G's</h1>
+  <h2>LOCAL CLASSICS</h2>
+  <nav>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+  </nav>
+  
+</header>
+
+<div class="first">
+  <p>California Wrap<span class="price">$8.99</span><br />
+  <small>Grilled chicken, fresh avocado, mixed lettuce, cucumbers, tomatoes, and chipotle mayo. Available in your choice of a white or wheat wrap.</small></p>
+</div>
+
+<div class="second">
+  <p>Chicken Italiano Sub<span class="price">$9.99</span><br />
+  <small>Chicken cutlet, prosciutto, fresh mozzarella, fresh basil & tomato drizzled with balsamic vinegar & extra virgin olive oil</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Local Lobstah Sub <span class="price">$44.99</span><br />
+  <small>Chunks of fresh lobster meat, twist of lemon & mayo on a grilled long sub roll. Price is subject to change based on current market price</small></p>
+</div>
+
+<footer>
+  
+</footer>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+

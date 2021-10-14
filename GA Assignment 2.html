@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<head>
+  <title>Anthony Guariglia</title>
+  <style>
+  
+    body{
+      text-align: center;
+      background: url("");
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: Times, Helvetica, sans-serif;
+      margin: 0px auto;
+      
+    }
+    
+    header{
+      background-image: url("https://i.imgur.com/0XJud1R.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 60px;
+    }
+    
+    header img{
+      margin-bottom: 30px;
+    }
+    
+    header nav a{
+      text-decoration: none;
+      color: #a3b2ef;
+      border-bottom: 2px solid #c9c2c1;
+      margin: 0 8px;
+      padding: 5px 8px;
+    }
+    
+    header nav a:hover{
+      background-color: #c9c2c1;
+      color: black;
+    }
+    
+    h2 {
+      text-align: left;
+      padding: 20px 0px 0px 20px;
+    }
+
+    article{
+      border-bottom: 2px solid #efefef;
+      padding-bottom: 40px;
+    }
+
+    .contact{
+      text-align: center;
+      padding: 20px 0px 0px 0px;
+    }
+
+    .image{
+      float: right;  
+      padding-left: 20px;
+    }
+    
+    .title{
+      background-color: #dfdfdf;
+      padding: 5px;
+    }
+    
+    .paragraph{
+      font-size: 16px;
+      text-align: justify;
+      padding: 0px 20px 0px 20px;
+    }
+    
+    .content{
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    
+    input[type=submit]{
+      background-color: #202020;
+      color: #ffffff;
+      padding: 5px;
+      font-size: 20px;
+      width: 360px;
+      margin: 0px auto;
+      border: 2px solid black;
+    }
+    
+    input[type=submit]:hover{
+      background-color: #efefef;
+      border: 2px solid #efefef;
+      color: black;
+    }
+    
+    input[type=submit]:active{
+      background-color: #cfcfcf;
+      border: 2px solid #afafaf;
+    }
+    
+    input[type=text]{
+      background-color: #efefef;
+      font-size: 15px;
+      padding: 5px;
+      display: block;
+      width: 360px;
+      margin: 10px auto;
+    }
+    
+    input[type=comment]{
+      background-color: #efefef;
+      font-size: 15px;
+      height: 35px;
+      width: 120px;
+      margin: 0px 20px 0px 10px;
+      text-align: center;
+      display: inline;
+      float: right;
+    
+    }
+    
+    button {
+      background-color: #202020;
+      color: #ffffff;
+      height: 35px;
+      width: 120px;
+      font-size: 15px;
+      border: 2px solid #202020;
+      display: inline;
+      float: right;
+    }
+    
+    .foot{
+      background-color: #cfcfcf;
+      padding: 30px;
+      margin-bottom: 0px;
+    }
+    
+    @media (max-width: 500px) {
+      header nav a{
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+      }
+      
+      h2 {
+        font-size: 16px;
+      }
+      
+      .image {
+        float: none;
+        width: 250px;
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+      
+      input[type=submit]{
+      background-color: #202020;
+      color: #ffffff;
+      padding: 5px;
+      font-size: 20px;
+      width: 255px;
+      margin: 0px auto;
+      border: 2px solid black;
+      }
+      
+      input[type=text]{
+      background-color: #efefef;
+      font-size: 15px;
+      padding: 5px;
+      display: block;
+      width: 255px;
+      margin: 10px auto;
+      }
+      
+      input[type=comment] {
+        margin-right: 35px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <!--Header for website-->
+  <header>
+    <img src="https://i.imgur.com/2FiYuRy.png" alt="Anthony Guariglia Headshot" width="200">
+    <nav>
+      <a href="#">About Me</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  
+  <!--Title of website-->
+  <div class="title">
+    <h1>ANTHONY GUARIGLIA</h1>
+  </div>
+  
+  <!--Begin website content-->
+  <div class="content">
+  
+    <!--newest article-->
+    <article>
+    <h2>
+      Update 9/29 - General Assembly Assignment #2
+    </h2>
+    <p class="paragraph">
+    <img src="https://i.imgur.com/v4eTt9t.jpg" class="image" width="250">
+      Feelings post-first-blog haven't changed too much. I've gotta be honest, I wrote everything I had to say in the Assignment 1 article and am just hoping to fill some space here.<br><br><br><br>Sorry to disappoint with the lack of insightful content but I hope I'm displaying my skills well enough to not delve into my personal details. Check back in after Assignment 3!
+    </p>
+    
+    
+    <!--Javascript for Button and Comment-->
+    <input type="comment" placeholder="Comment">
+    <button>Like</button><br><br>
+    <script>
+      $("button").on("click", function() {
+        alert("Someone liked your post!")
+      });
+    </script>
+    <!--End of Javascript-->
+    </article>
+    
+    <!--oldest article-->
+    <article>
+    <h2>
+      First Blog Post - General Assembly Assignment #1
+    </h2>
+    <p class="paragraph">
+    <img src="https://i.imgur.com/2nKnTyi.jpg" class="image" width="250">
+      Welcome to my blog! This is going to be a post of 'firsts'. For starters, this is the first time I'm going to be attempting to switch careers. It's also my first time learning HTML and CSS, and my first time without income since graduating college! Everything about it is a bit scary but the possibilities are exciting nonetheless. I'm enjoying the material that I've been exposed to so far and am looking forward to improving my skill, speed, and efficiency while writing code. My biggest concern at the moment is making sure my fundamentals are strong, so that as I progress through the course I will not be building on incorrect skills. Check back during Assignment 2 for an update!
+    </p>
+    
+    <!--Javascript for Button and Comment-->
+    <input type="comment" placeholder="Comment">
+    <button>Like</button><br><br>
+    <script>
+      $("button").on("click", function() {
+        alert("Someone liked your post!")
+      });
+    </script>
+    <!--End of Javascript-->
+    </article>
+    
+    <!--Contact Me Section-->
+    <h2 class="contact">Contact Me!</h2>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Message">
+    <input type="submit">
+    
+  </div>
+  
+  <footer>
+    <p class="foot">
+      This page is intended for view and use only by General Assembly<br>
+      <strong>Created by Anthony Guariglia</strong>
+    </p>
+  </body>
+
+
+
+
+
+
+
+
+
