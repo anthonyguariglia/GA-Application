@@ -40,9 +40,9 @@ div {
   height: 200px;
   background-size: cover;
   position: relative;
-  border-radius: 12px;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 1px;
+  width: 395px;
 }
 
 h1 {
@@ -61,6 +61,7 @@ h2 {
   font-family: 'Explora';
 }
 
+
 p {
   color: rgba(255,255,255,1);
   background: black;
@@ -77,25 +78,33 @@ p {
   transition: height .5s;
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
-  border-radius: 0 0 7px 7px;
   font-family: 'Explora';
   font-size: 30px;
 }
-
+p a{
+  color: white;
+  text-decoration: none;
+}
+p a:hover{
+  color: #68B6D8;
+}
 
 small {
   opacity: 0;
   width: 600px;
   text-align: justify;
   font-family: Helvetica;
-  font-size: 20px;
+  font-size: 15px;
 }
+
 
 footer {
   background-color: #ffefcf;
-  padding: 30px 0 20px 0;
+  padding: 40px 0 40px 0;
   border-top: 1px solid black;
   text-align: center;
+  position: relative;
+  bottom: 0px;
 }
 
 .show-description p {
@@ -107,17 +116,92 @@ footer {
   opacity: 1;
 }
 
-.first{
+.menu{
+ width: 800px; 
+ margin: 20px auto;
+ 
+}
+
+.foot {
+  background: none;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Explora';
+}
+
+
+.california{
   background-image: url("https://i.imgur.com/lIkl0mH.jpg");
   background-position: center;
-}
-.second{
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 10px 0 0px 0;*/
+}/*
+.california:hover{
+  background-color: #efefef;
+  background-image: url("https://i.imgur.com/lIkl0mH.jpg");
+  background-position: center;
+  opacity: 1;
+}*/
+.italiano{
   background-image: url("https://i.imgur.com/LQAHlj2.jpg");
   background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 10px 0 0px 0;*/
+  
 }
-.dessert{
+.lobstah{
   background-image: url("https://i.imgur.com/aFPp1zK.jpg");
   background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 0 0 10px 0;*/
+}
+.outback {
+  background-image: url("https://i.imgur.com/nDQjgdf.jpg");
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 0 0 10px 0;*/
+}
+.pollo {
+  background-image: url("https://i.imgur.com/yNTejrA.jpg");
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 0 0 10px 0;*/
+}
+.prosciutto {
+  background-image: url("https://i.imgur.com/VkDAvgM.jpg");
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 0 0 10px 0;*/
+}
+.vinny {
+  background-image: url("https://i.imgur.com/K7f0HTU.jpg");
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 0 0 10px 0;*/
+}
+.crazy {
+  background-image: url("https://i.imgur.com/l5dQwp0.jpg");
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  
+  /*margin: 0 0 10px 0;*/
 }
 .price {
   float: right;
@@ -133,7 +217,10 @@ footer {
     margin: 20px 0 30px 0;
   }
   div {
-    margin: 20px 12px 0 12px;
+    width: 315px;
+  
+    margin: 2px;
+    
   }
   p {
     font-size: 20px;
@@ -141,6 +228,12 @@ footer {
   }
   small {
     font-size: 16px;
+  }
+  .menu {
+    max-width: 400px;
+    display: block;
+  }
+  .california {
   }
 }
 
@@ -154,29 +247,54 @@ footer {
   <h2>LOCAL CLASSICS</h2>
   <nav>
       <a href="#">Menu</a>
-      <a href="#">Contact</a>
+      <a href="#">Order Online</a>
   </nav>
   
 </header>
 
-<div class="first">
-  <p>California Wrap<span class="price">$8.99</span><br />
-  <small>Grilled chicken, fresh avocado, mixed lettuce, cucumbers, tomatoes, and chipotle mayo. Available in your choice of a white or wheat wrap.</small></p>
-</div>
-
-<div class="second">
-  <p>Chicken Italiano Sub<span class="price">$9.99</span><br />
-  <small>Chicken cutlet, prosciutto, fresh mozzarella, fresh basil & tomato drizzled with balsamic vinegar & extra virgin olive oil</small></p>
-</div>
+<section class="menu">
+  <div class="california">
+    <p><a>California Wrap</a><span class="price">$8.99</span><br />
+    <small>Grilled chicken, fresh avocado, mixed lettuce, cucumbers, tomatoes, and chipotle mayo. Available in your choice of a white or wheat wrap.</small></p>
+  </div>
   
-<div class="dessert">
-  <p>Local Lobstah Sub <span class="price">$44.99</span><br />
-  <small>Chunks of fresh lobster meat, twist of lemon & mayo on a grilled long sub roll. Price is subject to change based on current market price</small></p>
-</div>
-
-<footer>
+  <div class="italiano">
+    <p><a>Chicken Italiano Sub</a><span class="price">$9.99</span><br />
+    <small>Chicken cutlet, prosciutto, fresh mozzarella, fresh basil & tomato drizzled with balsamic vinegar & extra virgin olive oil</small></p>
+  </div>
+    
+  <div class="lobstah">
+    <p><a>Local Lobstah Sub</a><span class="price">$44.99</span><br />
+    <small>Chunks of fresh lobster meat, twist of lemon & mayo on a grilled long sub roll. Price is subject to change based on current market price</small></p>
+  </div>
   
-</footer>
+  <div class="outback">
+  <p><a>Outback</a><span class="price">$10.99</span><br />
+    <small>Grilled roast beef with cheddar cheese, chipotle mayo, mixed lettuce & grilled onions & mushrooms</small></p>
+  </div>
+  
+  <div class="pollo">
+  <p><a>Pollo Pazzo</a><span class="price">$10.99</span><br />
+    <small>Chicken cutlet, feta cheese, bacon, mixed lettuce, tomatoes, red onions & pesto mayonnaise</small></p>
+  </div>
+  
+  <div class="prosciutto">
+  <p><a>Prosciutto Classico</a><span class="price">$9.99</span><br />
+    <small>Prosciutto, fresh mozzarella, fresh basil & tomato drizzled with balsamic vinegar & extra virgin olive oil</small></p>
+  </div>
+  
+  <div class="vinny">
+  <p><a>Skinny Vinny</a><span class="price">$9.99</span><br />
+    <small>Grilled Eggplant, Fresh Mozzarella, Roasted Peppers And Pesto Sauce</small></p>
+  </div>
+  
+  <div class="crazy">
+  <p><a>Jamaican Me Crazy</a><span class="price">$10.99</span><br />
+    <small>Chicken cutlet, Cheddar Cheese, mixed lettuce, tomatoes and Tangy Gold BBQ Sauce</small></p>
+  </div>
+  
+</section>
+
 
 <script>
   $('div').on('click', function() {
@@ -184,5 +302,13 @@ footer {
   });
 </script>
 
+<footer>
+  <span class="foot">
+      This page is intended for view and use only by General Assembly<br>
+      <strong>Created by Anthony Guariglia</strong>
+  </span>
+</footer>
+
 </body>
+
 
